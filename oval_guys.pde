@@ -3,7 +3,7 @@ float wide=2;
 float wi= 0.00005;
 int degrees=1000;
 void setup() {
-  size(1024,420);
+  size(640,420);
 }
 void draw() {
   clear();
