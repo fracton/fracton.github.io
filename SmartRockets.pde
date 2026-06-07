@@ -45,7 +45,9 @@ void setup() {
 
   // Create the obstacle course  
   obstacles = new ArrayList<Obstacle>();
-  obstacles.add(new Obstacle(int(random(width-200)), int(random(height-200)), 200, 10));
+  for (let i = 0; i < 13; i++) {
+    obstacles.add(new Obstacle(int(random(width-200)), int(random(height-200)), 200, 10));
+  }
 }
 
 void draw() {
