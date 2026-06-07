@@ -31,7 +31,7 @@ ArrayList<Obstacle> obstacles;  //an array list to keep track of all the obstacl
 void setup() {
   size(1280, 720);
   // The number of cycles we will allow a generation to live
-  lifetime = 1337;
+  lifetime = 333;
 
   // Initialize variables
   lifecycle = 0;
@@ -74,6 +74,7 @@ void draw() {
     population.fitness();
     population.selection();
     population.reproduction();
+    lifetime = lifetime + population.getGenerations();  
   }
 
   // Draw the obstacles
