@@ -30,6 +30,7 @@ ArrayList<Obstacle> obstacles;  //an array list to keep track of all the obstacl
 
 void setup() {
   size(1280, 720);
+  colorMode(HSB, 360, 100, 100);
   // The number of cycles we will allow a generation to live
   lifetime = 333;
 
@@ -40,7 +41,7 @@ void setup() {
   target = new Obstacle(width/2-12, 24, 24, 24);
 
   // Create a population with a mutation rate, and population max
-  float mutationRate = 0.001;
+  float mutationRate = 0.0016;
   population = new Population(mutationRate, 128);
 
   // Create the obstacle course  
@@ -54,7 +55,7 @@ void setup() {
 }
 
 void draw() {
-  background(13,0,0);
+  background(13,0,2);
 
   // Draw the start and target locations
   target.display();
@@ -83,7 +84,7 @@ void draw() {
   }
 
   // Display some info
-  fill(255,200,0);
+  fill(47 + (sin(frameCount/360)*10), 100, 100);
   text("Gen: " + population.getGenerations(), 10, 18);
   text("remaining: " + (lifetime-lifecycle), 10, 36);
   text("of: " + recordtime, 10, 54);
