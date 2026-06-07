@@ -109,21 +109,23 @@ class Rocket {
   void display() {
     //background(255,0,0);
     float theta = velocity.heading2D() + PI/2;
-    fill(200, 100);
-    stroke(0);
-    strokeWeight(1);
+    fill(255,200,0,64);
+    
+    strokeWeight(2);
     pushMatrix();
     translate(location.x, location.y);
     rotate(theta);
 
     // Thrusters
     rectMode(CENTER);
-    fill(0);
+    stroke(255,100,0);
+    fill(255,0,0);
     rect(-r/2, r*2, r/2, r);
     rect(r/2, r*2, r/2, r);
 
     // Rocket body
-    fill(175);
+    stroke(255,200,0);
+    fill(255,200,0,64);
     beginShape(TRIANGLES);
     vertex(0, -r*2);
     vertex(-r, r*2);
