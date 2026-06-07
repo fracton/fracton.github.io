@@ -54,7 +54,7 @@ void setup() {
 }
 
 void draw() {
-  background(152,190,100);
+  background(13,0,0);
 
   // Draw the start and target locations
   target.display();
@@ -82,7 +82,7 @@ void draw() {
   }
 
   // Display some info
-  fill(0);
+  fill(255,200,0);
   text("Generation #: " + population.getGenerations(), 10, 18);
   text("Cycles left: " + (lifetime-lifecycle), 10, 36);
   text("Record cycles: " + recordtime, 10, 54);
