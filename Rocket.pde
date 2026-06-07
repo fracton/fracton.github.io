@@ -108,9 +108,7 @@ class Rocket {
 
   void display() {
     //background(255,0,0);
-    float theta = velocity.heading2D() + PI/2;
-    fill(255,200,0,64);
-    
+    float theta = velocity.heading2D() + PI/2;    
     strokeWeight(2);
     pushMatrix();
     translate(location.x, location.y);
