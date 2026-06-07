@@ -45,13 +45,16 @@ void setup() {
 
   // Create the obstacle course  
   obstacles = new ArrayList<Obstacle>();
-  for (let i = 0; i < 5; i++) {
-    obstacles.add(new Obstacle(int(random(350))+(width/2-175), int(random(height-200)), 50, 10));
+  for (let i = 0; i < 7; i++) {
+    obstacles.add(new Obstacle(int(random(350))+(width/2-175), 50 + int(random(height-200)), 50, 10));
+  }
+  for (let i = 0; i < 10; i++) {
+    obstacles.add(new Obstacle(int(random(width-100)), 50 + int(random(height-200)), 100, 10));
   }
 }
 
 void draw() {
-  background(255);
+  background(152,190,100);
 
   // Draw the start and target locations
   target.display();
