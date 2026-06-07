@@ -121,8 +121,8 @@ class Rocket {
     rect(r/2, r*2, r/2, r);
 
     // Rocket body
-    stroke(47, 100, 100, 50);
-    fill(47, 100, 100, 50);
+    stroke(47, 100, 100, 255);
+    fill(47, 100, 100, 128);
     beginShape(TRIANGLES);
     vertex(0, -r*2);
     vertex(-r, r*2);
