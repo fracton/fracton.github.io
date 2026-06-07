@@ -1,3 +1,4 @@
+// modified by some schlub... see the original 
 // The Nature of Code
 // Daniel Shiffman
 // http://natureofcode.com
@@ -12,7 +13,7 @@
 // The Rocket's fitness is a function of how close it gets to the target as well as how fast it gets there
 
 // This example is inspired by Jer Thorp's Smart Rockets
-// http://www.blprnt.com/smartrockets/
+// http://www.blprnt.com/smartrockets/  
 
 int lifetime;  // How long should each generation live
 
@@ -28,9 +29,9 @@ Obstacle target;        // Target location
 ArrayList<Obstacle> obstacles;  //an array list to keep track of all the obstacles!
 
 void setup() {
-  size(640, 360);
+  size(1280, 720);
   // The number of cycles we will allow a generation to live
-  lifetime = 300;
+  lifetime = 666;
 
   // Initialize variables
   lifecycle = 0;
@@ -44,7 +45,7 @@ void setup() {
 
   // Create the obstacle course  
   obstacles = new ArrayList<Obstacle>();
-  obstacles.add(new Obstacle(width/2-100, height/2, 200, 10));
+  obstacles.add(new Obstacle(int(random(width-200)), int(random(height-200)), 200, 10));
 }
 
 void draw() {
