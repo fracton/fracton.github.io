@@ -75,7 +75,7 @@ void draw() {
     population.fitness();
     population.selection();
     population.reproduction();
-    lifetime = 333 + 1 / Math.sinh(population.getGenerations());  
+    lifetime = 333 + 1024 / Math.sinh(population.getGenerations());  
     recordtime = lifetime;
   }
 
