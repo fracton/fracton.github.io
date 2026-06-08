@@ -42,7 +42,7 @@ void setup() {
 
   // Create a population with a mutation rate, and population max
   float mutationRate = 0.0016;
-  population = new Population(mutationRate, 64);
+  population = new Population(mutationRate, 32);
 
   // Create the obstacle course  
   obstacles = new ArrayList<Obstacle>();
