@@ -103,9 +103,10 @@ class Rocket {
   void update() {
     velocity.add(acceleration);
     location.add(velocity);
-    acceleration.mult(0);
+    acceleration.mult(0); 
+    if (location.x > width) location.x = 1;
+    else if (location.x < 0) location = width;
   }
-
   void display() {
     float theta = velocity.heading2D() + PI/2;    
     strokeWeight(2);
