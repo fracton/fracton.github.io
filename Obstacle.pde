@@ -23,8 +23,8 @@ class Obstacle {
 
   void display() { 
     //int huey =  int( 360 * sin(frameCount) + 180) ; // (sin(frameCount/(360 * location.x * location.y)) + 2)
-    stroke(((frameCount * location.x) / 1000) % 360, 100, 100,100);
-    fill(location.y,100,100,100);
+    stroke(((frameCount * location.x) / 1000) % 360, 100, 50,100);
+    fill(((frameCount * location.y) / 1000) % 360, 100, 50,100);
     strokeWeight(4);
     rectMode(CORNER);
     rect(location.x,location.y,w,h);
