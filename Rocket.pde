@@ -83,8 +83,6 @@ class Rocket {
     } 
     else if (!hitTarget) {
       finishTime++;
-      if (location.x => width) { location.x = 10;}
-      else if (location.x < 0) {location = width - 10;}
     }
   }
 
