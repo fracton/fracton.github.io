@@ -21,7 +21,7 @@ class Obstacle {
     h = h_;
   }
 
-  void display() { 
+  void display(int frameCount) { 
     int huey =  int( 360 * sin(frameCount) + 180) ; // (sin(frameCount/(360 * location.x * location.y)) + 2)
     stroke(huey, 100, 100,100);
     fill(location.y,100,100,100);
