@@ -49,7 +49,7 @@ void setup() {
   for (let i = 0; i < 7; i++) {
     obstacles.add(new Obstacle(int(random(350))+(width/2-175), 50 + int(random(height-200)), 50, 10));
   }
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 30; i++) {
     obstacles.add(new Obstacle(int(random(width-100)), 50 + int(random(height-200)), 100, 10));
   }
 }
