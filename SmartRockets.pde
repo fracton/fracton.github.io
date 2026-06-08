@@ -81,7 +81,7 @@ void draw() {
 
   // Draw the obstacles
   for (Obstacle obs : obstacles) {
-    obs.display(framecount);
+    obs.display(frameCount);
   }
 
   // Display some info
