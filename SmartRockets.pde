@@ -42,7 +42,7 @@ void setup() {
 
   // Create a population with a mutation rate, and population max
   float mutationRate = 0.0016;
-  population = new Population(mutationRate, 128);
+  population = new Population(mutationRate, 64);
 
   // Create the obstacle course  
   obstacles = new ArrayList<Obstacle>();
@@ -55,7 +55,7 @@ void setup() {
 }
 
 void draw() {
-  background(13,0,2);
+  background(13,0,5);
 
   // Draw the start and target locations
   target.display();
@@ -76,6 +76,7 @@ void draw() {
     population.selection();
     population.reproduction();
     lifetime = lifetime + population.getGenerations();  
+    recordtime = lifetime;
   }
 
   // Draw the obstacles
