@@ -30,7 +30,7 @@ ArrayList<Obstacle> obstacles;  //an array list to keep track of all the obstacl
 
 void setup() {
   size(1280, 720);
-  colorMode(HSB, 360, 100, 100);
+  colorMode(HSB, 360, 100, 100, 100);
   // The number of cycles we will allow a generation to live
   lifetime = 333;
 
