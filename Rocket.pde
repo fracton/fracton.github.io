@@ -83,6 +83,8 @@ class Rocket {
     } 
     else if (!hitTarget) {
       finishTime++;
+      if (location.x => width) { location.x = 10;}
+      else if (location.x < 0) {location = width - 10;}
     }
   }
 
@@ -104,8 +106,6 @@ class Rocket {
     velocity.add(acceleration);
     location.add(velocity);
     acceleration.mult(0); 
-    if (location.x > width) location.x = 1;
-    else if (location.x < 0) location = width;
   }
   void display() {
     float theta = velocity.heading2D() + PI/2;    
