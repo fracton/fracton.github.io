@@ -116,7 +116,7 @@ class Rocket {
 
     // Thrusters
     rectMode(CENTER);
-    stroke(50, 100, 100);
+    stroke(0, 100, 100,40);
     fill(0,100,100);
     rect(-r/2, r*2, r/2, r);
     rect(r/2, r*2, r/2, r);
